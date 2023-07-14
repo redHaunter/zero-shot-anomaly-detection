@@ -20,18 +20,10 @@ I have changed the dataset loader to load input images in defualt resolution and
 
 |version  |Mother version |Method                       | avg. Runtime per image | avg. AUROC  | avg. Pixel AUROC |
 |---------|---------------|-----------------------------|------------------------|-------------|------------------|
-|#01|---------------|-----------------------------|------------------------|-------------|------------------|
-|---------|---------------|-----------------------------|------------------------|-------------|------------------|
-|---------|---------------|-----------------------------|------------------------|-------------|------------------|
-|---------|---------------|-----------------------------|------------------------|-------------|------------------|
-|---------|---------------|-----------------------------|------------------------|-------------|------------------|
-|---------|---------------|-----------------------------|------------------------|-------------|------------------|
-
-version	Mother version	Method	avg. Runtime per image	avg. AUROC	avg. Pixel AUROC
-#01	-	default	1.969 s	99.50%	97.40%
-#02	#01	feature extraction only up to 2nd layer	1.755 s	99.50%	97.40%
-#03	#01	modified calc_score function	0.107 s	99.20%	97.10%
-#04	#02	modified calc_score function	0.107 s	99.20%	97.10%
-#05	#04	modified cnn model for feature extraction	0.074 s	99.20%	97.10%
-#06	#04	input image size of 1024*1024 pixel	0.310 s	92.30%	-
+#01|-|default|1.969 s|99.5%|97.4%
+#02|#01|feature extraction only up to 2nd layer|1.755 s|99.5%|97.4%
+#03|#01|modified calc_score function|0.107 s|99.2%|97.1%
+#04|#02|modified calc_score function|0.107 s|99.2%|97.1%
+#05|#04|modified cnn model for feature extraction|0.074 s|99.2%|97.1%
+#06|#04|input image size of 1024*1024 pixel|0.310 s|92.3%|-
 
