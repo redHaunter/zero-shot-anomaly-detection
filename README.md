@@ -13,7 +13,7 @@ I have changed the calculation score function which calculates the distance betw
 # changing model sublayers
 I have changed the model sublayers of each model layer's bottleneck (up-to 2nd layer) input and output size so it looks like the 50-layer model in the image below
 
-<img src="images/model_example.png" alt="model_example" width="600"/>
+<img src="src/images/model_example.png" alt="model_example" width="600"/>
 
 # chaning dataset loader
 I have changed the dataset loader to load input images in defualt resolution and not changing them, the point that has to be consider is that the model we are using (even if not the excat wide_resnet50_2 but the trained weights) is trained on 320*320 images so if the input is different, it can cause inaccuracy. 
