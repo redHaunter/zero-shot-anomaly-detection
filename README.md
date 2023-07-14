@@ -18,6 +18,10 @@ I have changed the model sublayers of each model layer's bottleneck (up-to 2nd l
 # chaning dataset loader
 I have changed the dataset loader to load input images in defualt resolution and not changing them, the point that has to be consider is that the model we are using (even if not the excat wide_resnet50_2 but the trained weights) is trained on 320*320 images so if the input is different, it can cause inaccuracy. 
 
+
+
+# Result
+
 |version  |Mother version |Method                       | avg. Runtime per image | avg. AUROC  | avg. Pixel AUROC |
 |---------|---------------|-----------------------------|------------------------|-------------|------------------|
 #01|-|default|1.969 s|99.5%|97.4%
